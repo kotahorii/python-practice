@@ -1,13 +1,9 @@
-# books: dict[str, str] = {"Dracula": "Stoker", "1984": "Orwell", "The Trial": "Kafka"}
-# del books["The Trial"]
+from typing import Union
 
-# print(books)
+lists = []
 
-songs: dict[str, str] = {"1": "fun", "2": "blue", "3": "me", "4": "floor", "5": "live"}
-n: str = input("数字を入力してください: ")
+rap: list[Union[str, list[str]]] = ["1", "2", "3"]
+rock: list[str] = ["a", "b", "c"]
 
-if n in songs:
-    song: str = songs[n]
-    print(song)
-else:
-    print("見つかりません")
+rap.append(rock)
+print(rap)
