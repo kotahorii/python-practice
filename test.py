@@ -1,9 +1,4 @@
-from typing import Union
+books: dict[str, str] = {"Dracula": "Stoker", "1984": "Orwell", "The Trial": "Kafka"}
+del books["The Trial"]
 
-facts: dict[str, Union[str, int]] = {}
-
-facts["code"] = "fun"
-print(facts["code"])
-
-facts["founded"] = 1997
-print(facts["founded"])
+print(books)
