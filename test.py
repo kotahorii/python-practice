@@ -1,9 +1,8 @@
-# for i in range(100):
-#     print("Hello, world!")
+num: int = 11
 
-
-def hello(literal: str):
-    print(literal)
-
-
-hello("hello world")
+if num <= 10:
+    print("num is lower than 10")
+elif num > 10 and num <= 25:
+    print("10 < num <= 25")
+else:
+    print("num is greater than 25")
