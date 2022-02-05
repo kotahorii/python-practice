@@ -1,9 +1,6 @@
-from typing import Union
+from datetime import datetime
 
-lists = []
+today = datetime.now().strftime("%Y-%m-%d")
 
-rap: list[Union[str, list[str]]] = ["1", "2", "3"]
-rock: list[str] = ["a", "b", "c"]
-
-rap.append(rock)
-print(rap)
+file = f"file_{today}.txt"
+print(file)
