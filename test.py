@@ -1,8 +1,6 @@
-num: int = 11
+def f(x: int, y: int):
+    return x * y
 
-if num <= 10:
-    print("num is lower than 10")
-elif num > 10 and num <= 25:
-    print("10 < num <= 25")
-else:
-    print("num is greater than 25")
+
+result = f(2, 3)
+print(result)
