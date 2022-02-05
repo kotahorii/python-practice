@@ -1,12 +1,11 @@
-def f(x: int):
-    return x**2
+from typing import Union
 
 
-print(f(2))
+def convert_to_float(x: Union[int, float]):
+    try:
+        print(float(x))
+    except ValueError:
+        print("x is not valid")
 
 
-def g(a: int, b: int, c: int = 10, d: int = 20, e: int = 30):
-    return a + b + c + d + e
-
-
-print(g(5, 15))
+convert_to_float(3)
