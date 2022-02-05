@@ -2,7 +2,7 @@
 #     print("Hello, world!")
 
 
-def hello(literal: str) -> None:
+def hello(literal: str):
     print(literal)
 
 
