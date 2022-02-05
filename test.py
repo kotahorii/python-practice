@@ -41,12 +41,12 @@
 # result = add_it(2)
 # print(result)
 
-a: str = input("type a number: ")
-b: str = input("type b number: ")
-int_a = int(a)
-int_b = int(b)
 
-try:
-    print(int_a / int_b)
-except ZeroDivisionError:
-    print("b connot be zero")
+# try:
+#     a: str = input("type a number: ")
+#     b: str = input("type b number: ")
+#     int_a = int(a)
+#     int_b = int(b)
+#     print(int_a / int_b)
+# except (ZeroDivisionError, ValueError):
+#     print("Invalid input")
