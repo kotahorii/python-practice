@@ -26,9 +26,27 @@
 # even_odd(2)
 
 
-def f(x: int = 2):
-    return x**x
+# def f(x: int = 2):
+#     return x**x
 
 
-print(f())
-print(f(4))
+# print(f())
+# print(f(4))
+
+
+# def add_it(x: int, y: int = 10):
+#     return x + y
+
+
+# result = add_it(2)
+# print(result)
+
+a: str = input("type a number: ")
+b: str = input("type b number: ")
+int_a = int(a)
+int_b = int(b)
+
+try:
+    print(int_a / int_b)
+except ZeroDivisionError:
+    print("b connot be zero")
