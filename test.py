@@ -2,7 +2,8 @@
 #     print("Hello, world!")
 
 
-is_person: bool = True
+def hello(literal: str) -> None:
+    print(literal)
 
-if is_person:
-    print("True")
+
+hello("hello world")
