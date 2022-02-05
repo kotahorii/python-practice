@@ -1,6 +1,8 @@
-from datetime import datetime
+# name: str = "カミュ"
+# for i in range(len(name)):
+#     print(name[i])
 
-today = datetime.now().strftime("%Y-%m-%d")
+word1: str = input("input1: ")
+word2: str = input("input2: ")
 
-file = f"file_{today}.txt"
-print(file)
+print(f"私は今日{word1}を書いて、{word2}に送った")
