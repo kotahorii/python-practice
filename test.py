@@ -1,14 +1,14 @@
-# lists: list[str] = ["ウォーキング・デッド", "アントラージュ", "ザ・ソプラノズ", "ヴァンパイア・ダイアリーズ"]
+correct_answers: list[int] = [3, 7, 10]
 
-# for i, list in enumerate(lists):
-#     print(f"{i}: {list}")
+while True:
+    answer: str = input("数字を入力するか、qで終了します: ")
 
-list1: list[int] = [8, 19, 148, 4]
-list2: list[int] = [9, 1, 33, 83]
-new_list: list[int] = []
-
-for i in list1:
-    for j in list2:
-        new_list.append(i * j)
-
-print(new_list)
+    if answer == "q":
+        break
+    else:
+        try:
+            correct_or_wrong: str = "正解" if int(answer) in correct_answers else "不正解"
+            print(correct_or_wrong)
+            break
+        except ValueError:
+            continue
