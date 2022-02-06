@@ -1,5 +1,13 @@
-with open("hello.txt", "w") as f:
-    f.write("Hello world")
+import csv
 
-with open("hello.txt", "r") as f:
-    print(f.read())
+lists: list[list[str]] = [
+    ["トップガン", "リスキービジネス", "マイノリティ・リポート"],
+    ["タイタニック", "レブナント", "インセプション"],
+    ["トレーニングデイ", "マノンファイア", "フライト"],
+]
+
+
+with open("list.csv", "w", newline="", encoding="utf-8") as f:
+    w = csv.writer(f, delimiter=",")
+    for list in lists:
+        w.writerow(list)
