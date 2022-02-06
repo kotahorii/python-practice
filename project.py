@@ -1,3 +1,5 @@
-from tstp import cubed
+with open("hello.txt", "w") as f:
+    f.write("Hello world")
 
-print(cubed.calc_cube(3))
+with open("hello.txt", "r") as f:
+    print(f.read())
