@@ -25,3 +25,20 @@
 
 # square: Square = Square(29)
 # print(square)
+
+from typing import Any
+
+
+class SampleObj:
+    pass
+
+
+obj1: SampleObj = SampleObj()
+obj2: SampleObj = SampleObj()
+
+
+def is_same_obj(obj1: Any, obj2: Any) -> bool:
+    return obj1 is obj2
+
+
+print(is_same_obj(obj1, obj2))
