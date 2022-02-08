@@ -91,18 +91,18 @@
 # rectangle.what_am_i()
 
 
-class Rider:
-    def __init__(self, name: str) -> None:
-        self.name: str = name
+# class Rider:
+#     def __init__(self, name: str) -> None:
+#         self.name: str = name
 
 
-class Horse:
-    def __init__(self, name: str, rider: Rider) -> None:
-        self.name: str = name
-        self.rider = rider
+# class Horse:
+#     def __init__(self, name: str, rider: Rider) -> None:
+#         self.name: str = name
+#         self.rider = rider
 
 
-rider: Rider = Rider("Takashi")
-horse: Horse = Horse("uma", rider)
+# rider: Rider = Rider("Takashi")
+# horse: Horse = Horse("uma", rider)
 
-print(horse.rider.name)
+# print(horse.rider.name)
