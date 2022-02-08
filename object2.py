@@ -20,7 +20,11 @@ class Shape:
 
 
 class Square(Shape):
-    pass
+    def area(self) -> float:
+        return self.width * self.len
+
+    def print_size(self) -> None:
+        print(f"I am {self.width} by {self.len}")
 
 
 a_square: Square = Square(20, 20)
