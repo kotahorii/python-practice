@@ -20,7 +20,7 @@ class Queue:
         return len(self.items)
 
 
-def simulate_line(till_show: float, max_time: int):
+def simulate_line(till_show: int, max_time: int):
     pq: Queue = Queue()
     tix_sold: list[Union[str, int]] = []
 
@@ -40,5 +40,5 @@ def simulate_line(till_show: float, max_time: int):
     return tix_sold
 
 
-sold: list[Union[str, int]] = simulate_line(5, 1)
+sold: list[Union[str, int]] = simulate_line(10, 1)
 print(sold)
