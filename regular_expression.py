@@ -19,6 +19,10 @@ import re
 # m: list[str] = re.findall("t[ow]o", string, re.IGNORECASE)
 # print(m)
 
-line: str = "123 hi 34 hello"
-m: list[str] = re.findall("\d", line, re.IGNORECASE)
-print(m)
+# line: str = "The ghost that says boo haunts the loo"
+
+# m: list[str] = re.findall(".oo", line, re.IGNORECASE)
+# print(m)
+
+# m: list[str] = re.findall("\d", line, re.IGNORECASE)
+# print(m)
