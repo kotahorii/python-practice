@@ -6,7 +6,7 @@ class Stack:
         self.items: list[Union[str, int]] = []
 
     def is_empty(self) -> bool:
-        return self.items == []
+        return not self.items
 
     def push(self, item: Union[str, int]) -> None:
         self.items.append(item)
@@ -32,12 +32,22 @@ stack: Stack = Stack()
 # print(stack.peek())
 # print(stack.size())
 
-for c in "Hello":
-    stack.push(c)
+# for c in "yesterday":
+#     stack.push(c)
 
-reverse: str = ""
+# reverse: str = ""
 
-while stack.size():
-    reverse += str(stack.pop())
+# while stack.size():
+#     reverse += str(stack.pop())
 
-print(reverse)
+# print(reverse)
+
+items: list[int] = [1, 2, 3, 4, 5]
+new_items: list[Union[str, int]] = []
+for item in items:
+    stack.push(item)
+    print(stack.items)
+    new_item = stack.pop()
+    new_items.insert(0, new_item)
+
+print(new_items)

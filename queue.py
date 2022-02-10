@@ -8,7 +8,7 @@ class Queue:
         self.items: list[Union[str, int]] = []
 
     def is_empty(self) -> bool:
-        return self.items == []
+        return not self.items
 
     def enqueue(self, item: Union[str, int]) -> None:
         self.items.insert(0, item)
